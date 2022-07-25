@@ -1,0 +1,65 @@
+&blackColor #212121
+&whiteColor #FFFFFF
+
+%position {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+.work {
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__title {
+        @extend %position;           
+        color: &blackColor;
+        margin-bottom: 50px;
+        margin-top: 0;
+    
+    
+        }
+    
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            margin: 0%;
+    
+        }
+    
+    
+        &__type {
+            position: relative;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+    
+        }
+    
+    
+        &__details {
+            @extend %position;            
+            line-height: 1.1px;
+            text-transform: uppercase;
+            color: &whiteColor;
+            bottom: 0;
+            width: 100%;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            margin: 0;
+            background-color: rgba(47, 48, 58, 0.8);
+    
+        }
+
+
+
+
+}
+
