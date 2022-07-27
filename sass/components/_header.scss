@@ -94,7 +94,7 @@ $greyColor: #757575;
     
         &__link:hover,
         &__link:focus {
-            color: $primaryColor;
+            color: &primaryColor;
     
         }
     

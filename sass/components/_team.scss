@@ -104,7 +104,7 @@ $bleuColor: #2196F3;
             width: 44px;
             height: 44px;
             background-color: $whiteColor;
-            fill: &secondaryColor;
+            fill: $secondaryColor;
             border-radius: 50%;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     

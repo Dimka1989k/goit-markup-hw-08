@@ -1,4 +1,4 @@
-$whiteColor: #FFFFFF;
+$whiteColo: #FFFFFF;
 $blueColor: #2196f3;
 $backgroundColor: #188ce8;
 $bgColor: #2F303A;
@@ -144,7 +144,7 @@ $bgColor: #2F303A;
             width: 44px;
             height: 44px;
             background-color: rgba(255, 255, 255, 0.1);
-            fill: &whiteColor;
+            fill: $whiteColor;
             border-radius: 50%;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     

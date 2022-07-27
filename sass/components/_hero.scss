@@ -1,7 +1,6 @@
 
 $primaryColor: #FFFFFF;
 $secondaryColor: #2196F3;
-$bgColor: #2F303A;
 
 %herostyles {
     font-family: 'Roboto', sans-serif;
@@ -12,7 +11,7 @@ $bgColor: #2F303A;
 }
 
 .hero-section {
-    background-color: $bgColor;
+    background-color: #2F303A;
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
