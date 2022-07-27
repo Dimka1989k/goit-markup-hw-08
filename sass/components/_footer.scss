@@ -1,11 +1,11 @@
-&whiteColor #FFFFFF
-&blueColor #2196f3
-&backgroundColor #188ce8
-&bgColor #2F303A
+$whiteColor: #FFFFFF;
+$blueColor: #2196f3;
+$backgroundColor: #188ce8;
+$bgColor: #2F303A;
 
 
 .page-footer {
-    background: &bgColor;
+    background: $bgColor;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -25,13 +25,13 @@
 
 .footer-logo {
     @extend %logo;
-    color: &whiteColor;
+    color: $whiteColor;
     
 
 
     &__lable {
         @extend %logo;
-        color: &blueColor;
+        color: $blueColor;
             
     
     }
@@ -154,13 +154,13 @@
     
         &__link:hover,
         &__link:focus {
-            background-color: &blueColor;
+            background-color: $blueColor;
         }
     
     
         &__title {
             @extend %textsend;
-            color: &whiteColor;
+            color: $whiteColor;
             margin-bottom: 20px;
     
     
@@ -178,7 +178,7 @@
 
     &-text {
             @extend %textsend;
-            color: &whiteColor;
+            color: $whiteColor;
             display: block;
     
     
@@ -248,8 +248,8 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border: none;
         border-radius: 4px;
-        background-color: &blueColor;
-        color: &primaryColor;
+        background-color: $blueColor;
+        color: $primaryColor;
         transition-property: color background-color box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -262,7 +262,7 @@
 
     &:hover,
     &:focus {
-        background-color: &backgroundColor;
+        background-color: $backgroundColor;
         cursor: pointer;
 
 
@@ -274,7 +274,7 @@
         width: 24px;
         height: 24px;
         margin-left: 10px;
-        fill: &primaryColor;
+        fill: $primaryColor;
     }
 
 }

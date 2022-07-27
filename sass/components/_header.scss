@@ -1,16 +1,16 @@
 
 
-&primaryColor #2196F3
-&whiteColor #ECECEC
-&blackColor #000000
-&secondaryblackColor #212121
-&greyColor #757575
+$primaryColor: #2196F3;
+$whiteColor: #ECECEC;
+$blackColor: #000000;
+$secondaryblackColor: #212121;
+$greyColor: #757575;
 
 
 
 
 .header {
-     border-bottom: 1px solid &whiteColor;
+     border-bottom: 1px solid $whiteColor;
 
 
 
@@ -38,11 +38,11 @@
 .logo {
     @extend %logostyle;
     margin-right: 93px;
-    color: &blackColor;
+    color: $blackColor;
 
     &-lable {
         @extend %logostyle;
-        color: &primaryColor;
+        color: $primaryColor;
     
     
     }
@@ -86,7 +86,7 @@
     
         &__link {
             @extend %navstyles;
-            color: &secondaryblackColor;
+            color: $secondaryblackColor;
             
     
     
@@ -94,12 +94,12 @@
     
         &__link:hover,
         &__link:focus {
-            color: &primaryColor;
+            color: $primaryColor;
     
         }
     
         .current {
-            color: &primaryColor;
+            color: $primaryColor;
         }
     
         .current::after {
@@ -108,7 +108,7 @@
             width: 100%;
             height: 4px;
             background-size: cover;
-            background-color: &primaryColor;
+            background-color: $primaryColor;
             border-radius: 2px;
             margin-top: 43px;
             background-image: url(../images/hover.png);
@@ -120,7 +120,7 @@
 %contactstyle {
     justify-content: center;
     align-items: center;
-    fill: &greyColor;
+    fill: $greyColor;
     padding: 0;
     margin-right: 10px;
     fill: currentColor;
@@ -158,7 +158,7 @@
     
         &__link {
             @extend %navstyles;
-            color: &greyColor;
+            color: $greyColor;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
@@ -168,7 +168,7 @@
     
         &__link:hover,
         &__link:focus {
-            color: &primaryColor;
+            color: $primaryColor;
             fill: currentColor;
     
         }

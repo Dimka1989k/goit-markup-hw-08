@@ -1,5 +1,5 @@
-&blackColor #212121
-&whiteColor #FFFFFF
+$blackColor: #212121;
+$whiteColor: #FFFFFF;
 
 %position {
     position: absolute;
@@ -19,7 +19,7 @@
 
     &__title {
         @extend %position;           
-        color: &blackColor;
+        color: $blackColor;
         margin-bottom: 50px;
         margin-top: 0;
     
@@ -48,7 +48,7 @@
             @extend %position;            
             line-height: 1.1px;
             text-transform: uppercase;
-            color: &whiteColor;
+            color: $whiteColor;
             bottom: 0;
             width: 100%;
             padding-top: 27px;
