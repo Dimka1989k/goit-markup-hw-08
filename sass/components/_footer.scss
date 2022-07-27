@@ -1,4 +1,4 @@
-$whiteColo: #FFFFFF;
+$whiteColor: #FFFFFF;
 $blueColor: #2196f3;
 $backgroundColor: #188ce8;
 $bgColor: #2F303A;
@@ -71,6 +71,7 @@ $bgColor: #2F303A;
             @extend %contact;
             line-height: 1.7;           
             text-decoration: none;
+            color: $whiteColor;
     
     
         }
@@ -177,14 +178,14 @@ $bgColor: #2F303A;
 
 
     &-text {
-            @extend %textsend;
-            color: $whiteColor;
-            display: block;
+        @extend %textsend;
+        color: $whiteColor;
+        display: block;
     
     
     
     
-        }
+    }
 
 }
 
@@ -198,7 +199,7 @@ $bgColor: #2F303A;
     display: flex;
     align-items: center;
 
-    &__send-input {
+    &-input {
             display: flex;
             align-items: center;
             min-width: 358px;
@@ -219,7 +220,7 @@ $bgColor: #2F303A;
         }
     
     
-        .form__mail:focus {
+        &-input:focus {
             border: 1px solid rgba(255, 255, 255, 0.3);
             outline: none;
     

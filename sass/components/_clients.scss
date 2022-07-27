@@ -32,7 +32,7 @@ $colorBlue: #2196F3;
         &:focus,
         &__link:focus,
         &:hover &__link:hover {
-            border-color: &colorBlue;
+            border-color: $colorBlue;
             color: $colorBlue;
             fill: currentColor;
     
