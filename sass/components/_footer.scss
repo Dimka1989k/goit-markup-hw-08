@@ -52,7 +52,7 @@ $bgColor: #2F303A;
 
 .footer-contacts {
     display: flex;
-    justify-content: start;
+    
 
 
     &__list {
@@ -156,6 +156,7 @@ $bgColor: #2F303A;
         &__link:hover,
         &__link:focus {
             background-color: $blueColor;
+            
         }
     
     
