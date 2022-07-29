@@ -28,9 +28,16 @@ ul li {
 }
 
 section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  max-width: 1600px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  section .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 a:active,
@@ -82,10 +89,24 @@ textarea {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .container {
+    width: 1200px;
+  }
 }
 
 .body {
