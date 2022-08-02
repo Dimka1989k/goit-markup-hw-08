@@ -27,16 +27,18 @@ ul li {
 
 section {
     max-width: 1600px;
-    margin: 0 auto;
-    padding-top: 60px;
     padding-bottom: 60px;
-}
+    padding-top: 60px;
+    margin: 0;
 
-@media screen and (min-width: 1200px) {
-    section {
-        padding-top: 94px;
-        padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+        .section {
+            padding-top: 94px;
+            padding-bottom: 94px;
+            }
     }
+
 }
 
 a:active,
