@@ -15,20 +15,24 @@ $greyColor: #757575;
 
 
     &-inner {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        
+        
+    }
+
+         @media screen and (min-width:767px) {                    
             display: flex;
             height: 80px;
             align-items: center;
-
-            @media screen and (max-width:767px) {
-                    
-                    height: 60px;
                     
             
-                }
+            }
 
             
     
-        }
+        
 
 }
 
@@ -39,24 +43,60 @@ $greyColor: #757575;
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
-    text-decoration: none;
-    margin-right: 93px;
+    text-decoration: none;    
     color: $blackColor;
+
+    
+
+   
+
+    @media screen and (min-width:768px) {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        margin-right: 93px;
+        color: $blackColor;
+            
+                
+    
+        }
 
    
     
 
     &-lable {
         font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
+        font-weight: 700;        
+        font-size: 24px;
+        line-height: 1.19;
         letter-spacing: 0.03em;
         text-decoration: none;
         color: $primaryColor;
+
+
+
+        @media screen and (min-width:768px) {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+                color: $primaryColor;
+        
+        
+        
+            }
+
+
+
+       
 
 
        
@@ -68,26 +108,13 @@ $greyColor: #757575;
 }
 
 
-@media screen and (max-width:767px) {
-    .logo {
-    font-size: 26px;
-    line-height: 1.19;
 
-    }
     
 
-}
 
 
-@media screen and (max-width:767px) {
-    .logo-lable {
-        font-size: 26px;
-        line-height: 1.19;
-
-    }
 
 
-}
 
 
 .menu-container {
@@ -97,7 +124,7 @@ $greyColor: #757575;
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 100%;        
         background-color: #FFFFFF;
         overflow-y: scroll;
         z-index: 999;
@@ -111,7 +138,8 @@ $greyColor: #757575;
 
 .menu-mobie-container {
     @media screen and (max-width:767px) {
-        position: absolute;
+        position: relative;
+       padding-top: 48px;
         width: 100%;        
         height: 100%;
         display: flex;
@@ -129,7 +157,7 @@ $greyColor: #757575;
 }
 
 .menu-container-button {
-    position: relative;
+    position: absolute;
     top: 8px;
     right: 15px;
     margin-left: auto;    
@@ -156,9 +184,9 @@ $greyColor: #757575;
 
 .icon-mobile-close {
 
-    .menu-mobile-button:hover &,
-    .menu-mobile-button:focus & {
-        fill: #2196F3;
+    .menu-container-button:hover &,
+    .menu-container-button:focus & {
+        fill: $primaryColor;
     }
 
     .menu-mobile-button & {
@@ -174,7 +202,7 @@ $greyColor: #757575;
 
     .menu-mobile-button:hover &,
     .menu-mobile-button:focus & {
-        fill: #2196F3;
+        fill: $primaryColor;
     }
 
     .menu-mobile-button, .is-open & {
@@ -186,10 +214,14 @@ $greyColor: #757575;
 
 
  
-.nav {
+.nav {   
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+
+
+   
     
 
     
@@ -199,7 +231,7 @@ $greyColor: #757575;
         .nav {
             display: block;
             padding-top: 16px;
-            padding-bottom: 16px;
+            padding-bottom: 306px;
             margin: 0;
 
         }
@@ -218,7 +250,7 @@ $greyColor: #757575;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-            @media screen and (min-width:768px) {
+            @media screen and (min-width:767px) {
                 font-size: 14px;
                 line-height: 1.14;
                 
@@ -230,12 +262,32 @@ $greyColor: #757575;
         &__item {
             display: flex;
             text-align: center;
-            margin-right: 50px;         
+            margin-right: 50px;  
+            
+            @media screen and (max-width: 767px) {                    
+                margin-bottom: 32px;
+            }
+
+
+
+            
+
+
+
 
 
 
     
         }
+
+
+                @media screen and (max-width: 767px) {
+                    &__item:last-child {
+                        margin-bottom: 0px;
+        
+                    }
+        
+                }
         
 
 
@@ -248,12 +300,32 @@ $greyColor: #757575;
     
         &__link {
             font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-            text-decoration: none;
-            color: $secondaryblackColor;
+            font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 1.175;
+                letter-spacing: 0.02em;
+                text-decoration: none;
+                color: $secondaryblackColor;
+
+
+          
+
+
+
+            @media screen and (min-width:1200px) {
+
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1.1;
+                    letter-spacing: 0.02em;
+                    text-decoration: none;
+                    color: $secondaryblackColor;
+                
+                
+            }
 
 
             
@@ -271,53 +343,80 @@ $greyColor: #757575;
     
         }
     
-        .current {
-            color: $primaryColor;
-        }
-    
         .current::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 4px;
-            background-size: cover;
-            background-color: $primaryColor;
-            border-radius: 2px;
-            margin-top: 44px;
-            background-image: url(../images/hover.png);
-
-
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:767px) {
                     display: none;
+            
+            
                 }
 
 
-                
-    
+
+            @media screen and (min-width: 768px) {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-size: cover;
+                    background-color: $primaryColor;
+                    border-radius: 2px;
+                    margin-top: 44px;
+                    background-image: url(../images/hover.png);
+                    color: $primaryColor;
+            
+            
+                }
+
+
+
+            @media screen and (min-width: 1200px) {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-size: cover;
+                    background-color: $primaryColor;
+                    border-radius: 2px;
+                    margin-top: 44px;
+                    background-image: url(../images/hover.png);
+                    color: $primaryColor;
+            
+            
+                }
+
+
+
+
         }
+    
+        
+
+
+           
+
+
+                
+          
+        
 
 }
 
 
-@media screen and (max-width: 767px) {
-    .nav__link {
-        font-size: 40px;
-        line-height: 1.17;
-
-    }
-
-
-}
 
 
 
 
-@media screen and (max-width: 767px) {
-     .nav__item {
-        margin-bottom: 32px;
-    }
 
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,7 +428,28 @@ $greyColor: #757575;
    
     
     &__list {
-        display: block;
+        
+
+        @media screen and (max-width: 767px) {
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                flex-direction: column-reverse;
+            }
+        
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                height: 100%;
+            }
             
             
 
@@ -371,7 +491,10 @@ $greyColor: #757575;
         }
     
         &__item {
-            margin-bottom: 32px;
+            
+            
+
+            
 
 
 
@@ -400,23 +523,37 @@ $greyColor: #757575;
     
     
         }
+
+                
     
     
         &__item:last-child {
             margin-right: 0;
+            margin-bottom: 32px;
     
+        }
+
+
+         @media screen and (max-width:767px){
+            .header-contacts__item:first-child {
+                margin-bottom: 64px;
+                
+            } 
         }
     
     
         &__link {
             font-family: 'Roboto', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 34px;
-                line-height: 40px;             
-                letter-spacing: 0.02em;            
-                color: #2196F3;
-                text-decoration: none;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: $greyColor;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+            
 
 
             @media screen and (min-width:768px) {
@@ -558,9 +695,10 @@ $greyColor: #757575;
 
 .header-social__networks {
     display: flex;
+    
 
 
-    &-item + &-item {
+    .header-social__networks-item + .header-social__networks-item {
         border-left: 1px solid rgba(33, 33, 33, 0.2);
 
     }
@@ -577,18 +715,36 @@ $greyColor: #757575;
         letter-spacing: 0.02em;        
         color: #2196F3;
         text-decoration: none;
-        padding: 0 10px;
+        
 
 
+        
 
-         @media screen and (min-width:767px) {
+
+        @media screen and (min-width:767px) {
         display: none;
     }
+
+        
         
 
     }
 
 
+    &-item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        &-item:first-child {
+            padding-left: 0px;
+    
+        }
+
+
 }
+
+ 
+
 
 }

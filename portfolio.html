@@ -27,68 +27,77 @@
       <div class="container">
         <div class="header-inner">
           <a href="./index.html" class="logo">
-            <span class="logo-lable">Web</span>Studio</a
-          >
-          <nav class="nav">
-            <ul class="nav list">
-              <li class="nav__item">
-                <a class="nav__link link" href="./index.html">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link current" href="./portfolio.html"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-contacts">
-            <ul class="header-contacts__list">
-              <li class="header-contacts__item">
-                <a
-                  class="header-contacts__link"
-                  href="mailto:info@devstudio.co"
-                >
-                  <svg class="header-contacts__mail">
-                    <use
-                      href="./images/icons.svg#icon-mail"
-                      width="16px"
-                      height="12px"
-                    ></use></svg
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="header-contacts__item">
-                <a class="header-contacts__link" href="tel:+380961111111">
-                  <svg class="header-contacts__phone">
-                    <use
-                      href="./images/icons.svg#icon-smartphone"
-                      width="10px"
-                      height="16px"
-                    ></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-            <ul class="header-social__networks">
-              <li class="header-social__networks-item">
-                <a href="#" class="header-social__networks-link">Instagram</a>
-              </li>
-              <li class="header-social__networks-item">
-                <a href="#" class="header-social__networks-link">Twitter</a>
-              </li>
-              <li class="header-social__networks-item">
-                <a href="#" class="header-social__networks-link">Facebook</a>
-              </li>
-              <li class="header-social__networks-item">
-                <a href="#" class="header-social__networks-link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-          >
+            <span class="logo-lable">Web</span>Studio</a>
+          <button 
+            type="button" 
+            class="menu-mobile-button js-open-menu" 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            data-menu-open>
+              <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="icon-mobile-open" href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
+            <div class="menu-mobie-container js-close-menu">
+              <button 
+                type="button" 
+                class="menu-container-button" 
+                aria-expanded="false" 
+                aria-controls="menu-container"
+                data-menu-close>
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                  <use class="icon-mobile-close" href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <nav class="nav">
+                <ul class="nav list">
+                  <li class="nav__item">
+                    <a class="nav__link link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link current" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+                <div class="header-contacts">
+                  <ul class="header-contacts__list">
+                    <li class="header-contacts__item">
+                      <a class="header-contacts__link" href="mailto:info@devstudio.co">
+                        <svg class="header-contacts__mail">
+                         <use  href="./images/icons.svg#icon-mail" width="16px"  height="12px" aria-hidden="true"></use>
+                        </svg>info@devstudio.com
+                      </a>
+                    </li>
+                    <li class="header-contacts__item">
+                      <a class="header-contacts__link" href="tel:+380961111111">
+                        <svg class="header-contacts__phone">
+                          <use href="./images/icons.svg#icon-smartphone" width="10px" height="16px" aria-hidden="true"></use>
+                        </svg> +38 096 111 11 11
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="header-social__networks">
+                    <li class="header-social__networks-item">
+                        <a href="#" class="header-social__networks-link">Instagram</a>
+                    </li>
+                    <li class="header-social__networks-item">
+                        <a href="#" class="header-social__networks-link">Twitter</a>
+                    </li>
+                    <li class="header-social__networks-item">
+                        <a href="#" class="header-social__networks-link">Facebook</a>
+                    </li>
+                    <li class="header-social__networks-item">
+                        <a href="#" class="header-social__networks-link">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>                
+              </div>
+            </div>                     
+          </div>     
         </div>
       </div>
     </header>
@@ -449,12 +458,10 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
