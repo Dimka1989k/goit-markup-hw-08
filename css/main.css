@@ -686,6 +686,13 @@ textarea {
     height: 12px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-contacts .header-contacts__link--accent {
+    color: #2196F3;
+    font-size: 34px;
+    line-height: 1.18;
+  }
+}
 .header-contacts .header-social__networks {
   display: -webkit-box;
   display: -ms-flexbox;
