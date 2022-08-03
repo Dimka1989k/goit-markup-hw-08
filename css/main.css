@@ -329,6 +329,9 @@ textarea {
   padding: 0;
   background-color: #FFFFFF;
   border: 1px solid transparent;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .menu-container-button {
@@ -341,6 +344,9 @@ textarea {
   margin-left: auto;
   background-color: #FFFFFF;
   border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-mobile-button {
@@ -489,6 +495,7 @@ textarea {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -562,9 +569,16 @@ textarea {
     margin-right: 50px;
   }
 }
-.header-contacts__item:last-child {
-  margin-right: 0;
-  margin-bottom: 32px;
+@media screen and (max-width: 768px) {
+  .header-contacts__item:last-child {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .header-contacts .header-contacts__item:first-child {
@@ -724,14 +738,6 @@ textarea {
   padding-left: 0px;
 }
 
-.hero-section__text, .hero-section__button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  text-align: center;
-  letter-spacing: 0.06em;
-  margin: 0 auto;
-}
-
 .hero-section {
   background-color: #2F303A;
   max-width: 1600px;
@@ -746,6 +752,11 @@ textarea {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img111.jpg);
 }
 .hero-section__button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -764,13 +775,50 @@ textarea {
   text-decoration: none;
 }
 .hero-section__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
   text-transform: uppercase;
   color: #FFFFFF;
-  max-width: 696px;
   margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.6;
+  max-width: 360px;
+}
+@media screen and (min-width: 768px) {
+  .hero-section__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.6;
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 44px;
+    line-height: 1.4;
+    max-width: 696px;
+  }
 }
 
 .benefits__text, .benefits__title {

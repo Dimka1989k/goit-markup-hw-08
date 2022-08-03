@@ -2,13 +2,7 @@
 $primaryColor: #FFFFFF;
 $secondaryColor: #2196F3;
 
-%herostyles {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    text-align: center;
-    letter-spacing: 0.06em;
-    margin: 0 auto;
-}
+
 
 .hero-section {
     background-color: #2F303A;
@@ -22,8 +16,16 @@ $secondaryColor: #2196F3;
     background-position: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img111.jpg);
 
+
+
+    
+
     &__button {
-        @extend %herostyles;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.06em;
+        margin: 0 auto;
         padding: 10px 32px;        
         font-weight: 700;
         font-size: 16px;
@@ -41,14 +43,60 @@ $secondaryColor: #2196F3;
 
 
     &__text {
-        @extend %herostyles;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.4;       
+        text-align: center;
+        letter-spacing: 0.06em;
+        margin: 0 auto;
         text-transform: uppercase;
         color: $primaryColor;
-        max-width: 696px;        
         margin-bottom: 30px;
+
+
+        font-size: 26px;
+        line-height: 1.6; 
+        max-width: 360px;
+        
+        
+
+
+
+        @media screen and (min-width: 768px) {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 0.06em;
+        margin: 0 auto;   
+        text-transform: uppercase;
+        color: $primaryColor;
+        margin-bottom: 30px;
+
+        font-size: 26px;
+        line-height: 1.6; 
+        max-width: 360px;        
+        
+        }
+
+
+        @media screen and (min-width: 1200px) {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            text-align: center;
+            letter-spacing: 0.06em;            
+            margin: 0 auto;
+            text-transform: uppercase;
+            color: $primaryColor;
+            margin-bottom: 30px;
+            
+            font-size: 44px;
+            line-height: 1.4;  
+            max-width: 696px;
+            
+            
+        }
 
 
     }

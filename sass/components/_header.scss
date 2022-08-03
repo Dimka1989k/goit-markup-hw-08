@@ -147,6 +147,7 @@ $greyColor: #757575;
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
+        
     }
 
     @media screen and (min-width:768px) {
@@ -164,9 +165,15 @@ $greyColor: #757575;
     padding: 0;
     background-color:#FFFFFF;
     border: 1px solid transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    
+    
+    
 
     @media screen and (min-width:768px) {
         display: none;
+        
     }
 }
 
@@ -176,6 +183,14 @@ $greyColor: #757575;
     margin-left: auto;
     background-color: #FFFFFF;
     border: 1px solid transparent;
+    cursor: pointer;         
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    
+    
+    
+
 
     @media screen and (min-width:768px) {
         display: none;
@@ -183,10 +198,15 @@ $greyColor: #757575;
 }
 
 .icon-mobile-close {
+    
+
+    
 
     .menu-container-button:hover &,
     .menu-container-button:focus & {
         fill: $primaryColor;
+        
+        
     }
 
     .menu-mobile-button & {
@@ -198,17 +218,25 @@ $greyColor: #757575;
     }
 }
 
-.icon-mobile-open {   
+
+
+
+
+.icon-mobile-open { 
+    
+    
 
     .menu-mobile-button:hover &,
     .menu-mobile-button:focus & {
         fill: $primaryColor;
+        
     }
 
     .menu-mobile-button, .is-open & {
         display: none;
     }
 }
+
 
 
 
@@ -267,6 +295,13 @@ $greyColor: #757575;
             @media screen and (max-width: 767px) {                    
                 margin-bottom: 32px;
             }
+
+
+
+            
+
+
+            
 
 
 
@@ -435,6 +470,7 @@ $greyColor: #757575;
                 justify-content: start;
                 align-items: flex-start;
                 flex-direction: column-reverse;
+                margin: 0;
             }
         
             @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -519,22 +555,46 @@ $greyColor: #757575;
                 }
 
 
+                
+
+
 
     
     
         }
+
+
+
+
 
                 
     
     
+       @media screen and (max-width:768px) {
         &__item:last-child {
             margin-right: 0;
             margin-bottom: 32px;
+            
     
+        }
+    }
+
+
+        @media screen and (min-width:1200px) {
+            &__item:last-child {
+                margin-right: 0;
+                
+    
+    
+            }
         }
 
 
-         @media screen and (max-width:767px){
+
+        
+
+
+         @media screen and (max-width:767px) {
             .header-contacts__item:first-child {
                 margin-bottom: 64px;
                 
