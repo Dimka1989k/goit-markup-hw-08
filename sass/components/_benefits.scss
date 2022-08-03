@@ -11,16 +11,31 @@ $primarybgColor: #F5F4FA;
 }
 
 .benefits {
+    
 
     &__list {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        gap: 30px;
+        
+        
+
+
+        @media screen and (min-width:1200px) {
+                
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    gap: 30px;
+        
+                }
+       
+
+        
 
     }
+
+
+
 
     &__content {
         display: flex;
@@ -61,3 +76,11 @@ $primarybgColor: #F5F4FA;
     }
 
 }
+
+
+
+
+
+
+
+
