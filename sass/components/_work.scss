@@ -18,7 +18,14 @@ $whiteColor: #FFFFFF;
     padding-right: 15px;
 
     &__title {
-        @extend %position;           
+        
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        line-height: 1.17;
         color: $blackColor;
         margin-bottom: 50px;
         margin-top: 0;
@@ -45,7 +52,13 @@ $whiteColor: #FFFFFF;
     
     
         &__details {
-            @extend %position;            
+            position: absolute;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-align: center;
             line-height: 1.1px;
             text-transform: uppercase;
             color: $whiteColor;

@@ -60,12 +60,27 @@ $greyColor: #757575;
         line-height: 1.19;
         letter-spacing: 0.03em;
         text-decoration: none;
-        margin-right: 93px;
+        margin-right: 87px;
         color: $blackColor;
             
                 
     
         }
+
+
+                @media screen and (min-width:1200px) {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 1.19;
+                    letter-spacing: 0.03em;
+                    text-decoration: none;
+                    margin-right: 93px;
+                    color: $blackColor;
+        
+        
+        
+                }
 
    
     
@@ -267,6 +282,19 @@ $greyColor: #757575;
             
             
     }
+
+
+        @media screen and (min-width:768px) {
+            .nav {
+                
+                padding-left: 0px;
+                
+    
+            }
+    
+    
+    
+        }
     
     
 
@@ -352,12 +380,13 @@ $greyColor: #757575;
 
                 font-family: 'Roboto', sans-serif;
                 font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 1.1;
-                    letter-spacing: 0.02em;
-                    text-decoration: none;
-                    color: $secondaryblackColor;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: 0.02em;
+                text-decoration: none;
+                color: $secondaryblackColor;
+                
                 
                 
             }
@@ -380,7 +409,7 @@ $greyColor: #757575;
     
         .current::after {
             @media screen and (max-width:767px) {
-                    display: none;
+            display: none;
             
             
                 }
@@ -467,22 +496,18 @@ $greyColor: #757575;
 
         @media screen and (max-width: 767px) {
                 display: flex;
-                justify-content: start;
-                align-items: flex-start;
                 flex-direction: column-reverse;
                 margin: 0;
             }
         
             @media screen and (min-width: 768px) and (max-width: 1199px) {
                 display: flex;
-                justify-content: start;
-                align-items: flex-start;
                 flex-direction: column;
             }
         
             @media screen and (min-width: 1200px) {
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
                 height: 100%;
             }
