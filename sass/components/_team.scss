@@ -95,7 +95,7 @@ $bleuColor: #2196F3;
 
 
 .team-list {
-    &__card {   
+    &__card { 
         width: 270px;
         height: 428px;
         left: 215px;
@@ -104,6 +104,12 @@ $bleuColor: #2196F3;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         text-align: center;
+
+
+
+        
+        
+        
         
     }
     
@@ -191,6 +197,20 @@ $bleuColor: #2196F3;
     }
 }
 
+
+@media screen  and (min-width: 480px) and (max-width: 767px) {
+
+
+    .team-list__card:last-child {
+        margin-bottom: 0px;
+    }
+
+   
+
+
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
     
@@ -201,6 +221,21 @@ $bleuColor: #2196F3;
 
 
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+    .team-list__card:last-child {
+        margin-bottom: 0px;
+    }
+
+    .team-list__card:nth-last-child(2) {
+        margin-bottom: 0px;
+    }
+
+
+
 }
 
 

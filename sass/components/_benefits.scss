@@ -115,6 +115,25 @@ $primarybgColor: #F5F4FA;
         text-transform: uppercase;
         color: $primaryColor;
         margin-bottom: 10px;
+        
+
+
+        @media screen and (win-width:480px){
+            font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                margin-top: 0;
+                font-weight: 700;
+                line-height: 1.1;
+                text-transform: uppercase;
+                color: $primaryColor;
+                margin-bottom: 10px;
+                text-align: center;
+
+
+            
+        }
     }
 
     &__text {
@@ -127,6 +146,7 @@ $primarybgColor: #F5F4FA;
         line-height: 1.7;
         color: $secondaryColor;
         margin-bottom: 0;
+        
 
 
     }
