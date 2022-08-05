@@ -11,27 +11,112 @@ $bgColor: #2F303A;
 
 }
 
-%logo {
-    font-family: 'Raleway',sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+
+.footer {
+
+
+
+
+    @media screen and (min-width:1200px) {
+            display: flex;
+    
+        }
+
+
+
+
+
+    @media screen and (min-width:1200px){
+        display: flex;
+        
+    }
+    
 }
 
 
-
 .footer-logo {
-    @extend %logo;
-    color: $whiteColor;
+    @media screen and (min-width:480px) {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            color: $whiteColor;
+    
+        }
+
+
+
+    @media screen and (min-width:768px) {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: $whiteColor;
+    
+    }
+    
+    
+    @media screen and (min-width:1200px) {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;           
+        color: $whiteColor;
+        
+    }
+    
     
 
 
     &__lable {
-        @extend %logo;
+
+        @media screen and (min-width:480px) {
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.2;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+                color: $blueColor;
+            }
+
+
+
+        @media screen and (min-width:768px) {
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.2;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+                color: $blueColor;
+            }
+
+
+
+
+        
+        @media screen and (min-width:1200px) {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
         color: $blueColor;
+        }
             
     
     }
@@ -39,19 +124,51 @@ $bgColor: #2F303A;
 
 }
 
-%contact {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.03em;       
-    text-decoration: none;
 
-}
 
 
 .footer-contacts {
-    display: flex;
+
+    @media screen and (min-width:480px) {
+            
+            
+    
+        }
+
+
+
+    @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+    
+        }
+
+
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        
+    }
+    
+
+
+
+    
+
+
+
+
+   
+    
+        
+        
+
+
+   
+
+
+ 
+
     
 
 
@@ -68,7 +185,12 @@ $bgColor: #2F303A;
     
     
         &__link {
-            @extend %contact;
+            font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                text-decoration: none;
             line-height: 1.7;           
             text-decoration: none;
             color: $whiteColor;
@@ -79,7 +201,12 @@ $bgColor: #2F303A;
     
     
         &__mail {
-            @extend %contact;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-decoration: none;
             line-height: 2;
             color: rgba(255, 255, 255, 0.6);
             
@@ -90,25 +217,31 @@ $bgColor: #2F303A;
     
     
         &__tel {
-            @extend %contact;
-            line-height: 2;
-            color: rgba(255, 255, 255, 0.6);
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        line-height: 2;
+        color: rgba(255, 255, 255, 0.6);
+
+
+
+       
+
+
+   
             
     
     
-        }
+}
 }
 
-%textsend {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 
-}
+
+
+
 
 
 .social-networks {
@@ -161,7 +294,13 @@ $bgColor: #2F303A;
     
     
         &__title {
-            @extend %textsend;
+            font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.1;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
             color: $whiteColor;
             margin-bottom: 20px;
     
@@ -175,11 +314,34 @@ $bgColor: #2F303A;
 
 
 .send {
-    margin-left: auto;
+
+
+    @media screen and (min-width:768px) {
+
+        display: block;
+        justify-content: center;
+
+        margin-left: 0;
+    
+        }
+    
+   
+   
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
+        
+    }
+    
 
 
     &-text {
-        @extend %textsend;
+        font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
         color: $whiteColor;
         display: block;
     

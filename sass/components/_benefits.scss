@@ -104,37 +104,25 @@ $primarybgColor: #F5F4FA;
     }
 
 
-    &__title {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        margin-top: 0;
-        font-weight: 700;
-        line-height: 1.1;
-        text-transform: uppercase;
-        color: $primaryColor;
-        margin-bottom: 10px;
-        
-
-
-        @media screen and (win-width:480px){
+    &__title {        
             font-family: 'Roboto', sans-serif;
-                font-style: normal;
-                font-size: 14px;
-                letter-spacing: 0.03em;
-                margin-top: 0;
-                font-weight: 700;
-                line-height: 1.1;
-                text-transform: uppercase;
-                color: $primaryColor;
-                margin-bottom: 10px;
-                text-align: center;
-
-
+            font-style: normal;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            margin-top: 0;
+            font-weight: 700;
+            line-height: 1.1;
+            text-transform: uppercase;
+            color: $primaryColor;
+            margin-bottom: 10px;
             
-        }
+
     }
+
+    
+            
+       
+    
 
     &__text {
         font-family: 'Roboto', sans-serif;
@@ -146,6 +134,7 @@ $primarybgColor: #F5F4FA;
         line-height: 1.7;
         color: $secondaryColor;
         margin-bottom: 0;
+        
         
 
 
@@ -190,7 +179,34 @@ $primarybgColor: #F5F4FA;
 }
 
 
+@media screen and (min-width: 480px) {
+    .benefits__title {
+        text-align: center;
 
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .benefits__title {
+        text-align: left;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .benefits__title {
+        text-align: left;
+
+    }
+
+
+}
 
 
 
