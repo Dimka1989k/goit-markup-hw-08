@@ -14,15 +14,69 @@ $bleuColor: #2196F3;
     height: 708px;
 
     &-list {
-            display: flex;
+            
+        @media screen and (min-width:480px) {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                
+        
+            }
+        
+        
+        
+            @media screen and (min-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+
+                
+        
+            }
+        
+        
+        display: flex;
             justify-content: space-between;
             padding-left: 0;
             margin-top: 50px;
             margin-bottom: 0;
+
+
     
         }
     
         &-title {
+            
+            @media screen and (min-width:480px) {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 1.2;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: $blackColor;
+                    margin: 0 auto;
+            
+                }
+            
+            
+            
+            
+            @media screen and (min-width:768px) {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 1.2;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $blackColor;
+                margin: 0 auto;
+            
+            }
+            
+            
+            
+            @media screen and (min-width:1200px) {
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
             font-size: 36px;
@@ -33,6 +87,7 @@ $bleuColor: #2196F3;
             margin: 0 auto;
     
         }
+    }
 }
 
 
@@ -41,6 +96,12 @@ $bleuColor: #2196F3;
 
 .team-list {
     &__card {
+
+        
+
+
+
+
         width: 270px;
         height: 428px;
         left: 215px;
@@ -123,3 +184,40 @@ $bleuColor: #2196F3;
 
 }
 
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+     .team-list__card {
+        width: 450px;
+        margin-bottom: 30px;
+
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    
+        .team-list__card {
+        flex-basis: calc(50% - 30px);
+        margin-bottom: 30px;
+
+
+
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    
+        .team-list__card {
+        flex-basis: calc(25% - 30px);
+
+
+
+    }
+
+}
