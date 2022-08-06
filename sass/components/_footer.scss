@@ -35,6 +35,12 @@ $bgColor: #2F303A;
 
 
 .footer-logo {
+
+
+    @media screen and (max-width:1199px) {
+            justify-content: center;
+    
+        }
     @media screen and (min-width:480px) {
             font-family: 'Raleway', sans-serif;
             font-style: normal;
@@ -44,6 +50,7 @@ $bgColor: #2F303A;
             letter-spacing: 0.03em;
             text-decoration: none;
             color: $whiteColor;
+            
     
         }
 
@@ -58,6 +65,7 @@ $bgColor: #2F303A;
         letter-spacing: 0.03em;
         text-decoration: none;
         color: $whiteColor;
+        
     
     }
     
@@ -130,6 +138,9 @@ $bgColor: #2F303A;
 .footer-contacts {
 
     @media screen and (min-width:480px) {
+        display: block;
+        margin-left: 0%;
+        
             
             
     
@@ -139,7 +150,7 @@ $bgColor: #2F303A;
 
     @media screen and (min-width:768px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
     
         }
 
@@ -149,7 +160,11 @@ $bgColor: #2F303A;
         display: flex;
         
     }
-    
+
+
+
+
+   
 
 
 
@@ -179,21 +194,44 @@ $bgColor: #2F303A;
     
         }
     
-        &__item {
+        &__item {            
             margin-bottom: 9px;
+
+
+            @media screen and (max-width:767px) {
+                justify-content: center;
+
+                
+            }
+
+
+
+
+
+            
+            
         }
     
     
         &__link {
             font-family: 'Roboto', sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                letter-spacing: 0.03em;
-                text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-decoration: none;
             line-height: 1.7;           
             text-decoration: none;
             color: $whiteColor;
+
+
+            @media screen and (max-width:1200px) {
+                    justify-content: center;
+            
+            
+                }
+
+            
     
     
         }
@@ -209,6 +247,14 @@ $bgColor: #2F303A;
             text-decoration: none;
             line-height: 2;
             color: rgba(255, 255, 255, 0.6);
+
+
+            @media screen and (max-width:1200px) {                
+                justify-content: center;
+
+                
+            }
+            
             
     
     
@@ -228,6 +274,14 @@ $bgColor: #2F303A;
 
 
 
+        @media screen and (max-width:1200px) {
+                justify-content: center;
+        
+        
+            }
+
+
+
        
 
 
@@ -238,6 +292,16 @@ $bgColor: #2F303A;
 }
 }
 
+@media screen and (max-width:1199px) {
+    .footer-contacts__item:last-child{
+        margin-bottom: 0px;
+
+    }
+    
+
+
+}
+
 
 
 
@@ -246,10 +310,19 @@ $bgColor: #2F303A;
 
 .social-networks {
     margin-left: 70px;
+
+
+    @media screen and (max-width:1200px) {
+            margin-left: 0px;
+            
+    
+    
+        }
     
     &__list {
             display: flex;
             padding: 0;
+            justify-content: center;
     
         }
     
@@ -302,7 +375,31 @@ $bgColor: #2F303A;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
             color: $whiteColor;
-            margin-bottom: 20px;
+            margin-bottom: 20px;            ;
+
+
+            @media screen and (max-width:1200px) {
+                    
+                    margin-top: 14px;
+                    text-align: center;
+                    
+                    
+            
+            
+                }
+
+
+            @media screen and (max-width:767px) {
+                           
+                margin-top: 60px;
+            
+            
+            
+            
+            
+            }
+
+            
     
     
         }
@@ -344,6 +441,20 @@ $bgColor: #2F303A;
             text-transform: uppercase;
         color: $whiteColor;
         display: block;
+        
+
+
+        @media screen and (max-width:1200px) {
+        
+                margin-top: 60px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+        
+        
+        
+        
+            }
     
     
     
@@ -361,6 +472,23 @@ $bgColor: #2F303A;
 .search-form__send {
     display: flex;
     align-items: center;
+    
+    
+
+
+
+    
+    
+
+
+    @media screen and (max-width:1200px){        
+        align-items: center;
+        margin-right: 0px;
+        flex-direction: column;
+        
+
+        
+    }
 
     &-input {
             display: flex;
@@ -377,6 +505,7 @@ $bgColor: #2F303A;
             background-color: transparent;
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 4px;
+            
     
     
     
@@ -417,10 +546,25 @@ $bgColor: #2F303A;
         transition-property: color background-color box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 20px;
+
+
+
+
+
+        @media screen and (min-width: 1200px)  {
+                margin-top: 0px;
+        }
+
+
+        
 
 
 
     }
+
+
+       
 
 
 
@@ -441,4 +585,11 @@ $bgColor: #2F303A;
         fill: $primaryColor;
     }
 
+
+
+      
+
 }
+
+
+

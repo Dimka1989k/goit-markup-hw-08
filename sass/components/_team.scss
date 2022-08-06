@@ -49,7 +49,7 @@ $bleuColor: #2196F3;
             
             @media screen and (min-width:480px) {
                     font-family: 'Roboto', sans-serif;
-                    font-weight: 700;
+                    font-weight: 700px;
                     font-size: 28px;
                     line-height: 1.2;
                     text-align: center;
@@ -64,7 +64,7 @@ $bleuColor: #2196F3;
             
             @media screen and (min-width:768px) {
                 font-family: 'Roboto', sans-serif;
-                font-weight: 700;
+                font-weight: 700px;
                 font-size: 28px;
                 line-height: 1.2;
                 text-align: center;
@@ -78,7 +78,7 @@ $bleuColor: #2196F3;
             
             @media screen and (min-width:1200px) {
             font-family: 'Roboto', sans-serif;
-            font-weight: 700;
+            font-weight: 700px;
             font-size: 36px;
             line-height: 1.2;
             text-align: center;
@@ -96,7 +96,42 @@ $bleuColor: #2196F3;
 
 .team-list {
     &__card { 
-        width: 270px;
+
+
+        @media screen and (min-width:480px) {
+                width: 450px;
+                height: 622px;
+                left: 215px;
+                top: 1635px;
+                background: $whiteColor;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 0px 0px 4px 4px;
+                text-align: center;
+                margin-bottom: 30px;
+        
+            }
+
+        @media screen and (min-width:768px) {
+                width: 354px;
+                height: 536px;
+                left: 215px;
+                top: 1635px;
+                background: $whiteColor;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 0px 0px 4px 4px;
+                text-align: center;
+                margin-bottom: 30px;
+        
+            }
+
+
+
+
+        
+        
+        
+        @media screen and (min-width:1200px) {
+        width: 270;
         height: 428px;
         left: 215px;
         top: 1635px;
@@ -104,6 +139,13 @@ $bleuColor: #2196F3;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         text-align: center;
+        margin-bottom: 0px;
+
+        }
+
+
+
+      
 
 
 
@@ -117,7 +159,7 @@ $bleuColor: #2196F3;
     &__name {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500px;
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -130,7 +172,7 @@ $bleuColor: #2196F3;
     &__job {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 400px;
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -144,12 +186,43 @@ $bleuColor: #2196F3;
 
 
 .job-contact {
-    display: flex;
-    list-style: none;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-top: 16px;
-    justify-content: space-between;
+    @media screen and (min-width:480px) {
+            display: flex;
+            list-style: none;
+            padding-left: 32px;
+            padding-right: 32px;
+            margin-top: 16px;
+            justify-content: center;
+    
+        }
+
+
+
+    @media screen and (min-width:768px) {
+            display: flex;
+            list-style: none;
+            padding-left: 32px;
+            padding-right: 32px;
+            margin-top: 16px;
+            justify-content: center;
+    
+        }
+
+
+
+
+
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        list-style: none;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 16px;
+        justify-content: center;
+        
+    }
+    
 
 
 
@@ -187,18 +260,18 @@ $bleuColor: #2196F3;
 
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-
-     .team-list__card {
-        width: 450px;
-        margin-bottom: 30px;
 
 
-    }
-}
 
 
-@media screen  and (min-width: 480px) and (max-width: 767px) {
+
+
+
+
+
+
+
+@media screen  and (min-width: 768px) and (max-width: 767px) {
 
 
     .team-list__card:last-child {
@@ -215,8 +288,9 @@ $bleuColor: #2196F3;
 
     
         .team-list__card {
-        flex-basis: calc(50% - 30px);
+        
         margin-bottom: 30px;
+        
 
 
 
@@ -245,6 +319,7 @@ $bleuColor: #2196F3;
     
         .team-list__card {
         flex-basis: calc(25% - 30px);
+        
 
 
 
