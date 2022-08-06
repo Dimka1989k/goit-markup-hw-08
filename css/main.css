@@ -94,8 +94,6 @@ textarea {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 @media screen and (min-width: 320px) {
@@ -549,7 +547,6 @@ textarea {
     border-radius: 2px;
     margin-top: 44px;
     background-image: url(../images/hover.png);
-    color: #2196F3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -563,7 +560,6 @@ textarea {
     border-radius: 2px;
     margin-top: 44px;
     background-image: url(../images/hover.png);
-    color: #2196F3;
   }
 }
 
@@ -796,7 +792,7 @@ textarea {
 .header-contacts .header-social__networks-link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
