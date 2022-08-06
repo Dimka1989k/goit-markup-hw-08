@@ -19,8 +19,7 @@ $greyColor: #212121;
     &__modal {
             display: flex;
             flex-direction: column;
-            align-items: center;            
-            
+            align-items: center;          
             flex-direction: column;
             margin: 40px 40px;
     
@@ -43,7 +42,7 @@ $greyColor: #212121;
         &__title {
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 700px;
+            font-weight: 700;
             font-size: 20px;
             line-height: 1.2;
             text-align: center;
@@ -59,7 +58,7 @@ $greyColor: #212121;
             height: 14px;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 12px;
             line-height: 1.2;
             letter-spacing: 0.01em;
@@ -134,7 +133,7 @@ $greyColor: #212121;
         &__content textarea::placeholder {
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 12px;
             line-height: 14px;
             letter-spacing: 0.01em;
@@ -167,26 +166,26 @@ $greyColor: #212121;
 .search-checkbox {
 
 
-    @media screen and (min-width:480px) {
+   
             position: relative;
             align-items: center;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 12px;
             line-height: 1.16;
             letter-spacing: 0.03em;
             color: $secondaryColor;
             padding-left: 24px;
     
-        }
+        
 
     @media screen and (min-width:768px) {
             position: relative;
             align-items: center;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 12px;
             line-height: 1.16;
             letter-spacing: 0.03em;
@@ -201,7 +200,7 @@ $greyColor: #212121;
         align-items: center;
         font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: 400px;
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
@@ -257,25 +256,25 @@ $greyColor: #212121;
 
     &__text {
 
-        @media screen and (min-width:480px) {
+        
                 display: inline;
                 font-family: 'Roboto', sans-serif;
                 font-style: normal;
-                font-weight: 400px;
+                font-weight: 400;
                 font-size: 12px;
                 line-height: 1.16;
                 letter-spacing: 0.03em;
                 text-decoration-line: underline;
                 color: $primaryColor;
         
-            }
+            
 
 
         @media screen and (min-width:768px) {
             display: inline;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 12px;
             line-height: 1.16;
             letter-spacing: 0.03em;
@@ -289,7 +288,7 @@ $greyColor: #212121;
             display: inline;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 400px;
+            font-weight: 400;
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;

@@ -23,7 +23,7 @@ $secondaryColor: #757575;
 .portfolio-cards {
 
 
-    @media screen and (min-width:480px) {
+   
             width: 450px;
             height: 404px;
             left: 215px;
@@ -31,7 +31,7 @@ $secondaryColor: #757575;
             border: 1px solid $borderColor;
             cursor: pointer;
     
-        }
+        
 
 
 
@@ -100,7 +100,7 @@ $secondaryColor: #757575;
         &__overlay-text {
             font-family: 'Roboto', sans-serif;
                 font-style: normal;
-                font-weight: 400px;
+                font-weight: 400;
                 letter-spacing: 0.03em;
             font-size: 18px;
             line-height: 1.6;            
@@ -122,7 +122,7 @@ $secondaryColor: #757575;
         &__description-text {
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 700px;
+            font-weight: 700;
             font-size: 18px;
             line-height: 2;
             letter-spacing: 0.06em;
@@ -136,7 +136,7 @@ $secondaryColor: #757575;
         &__description-title {
             font-family: 'Roboto', sans-serif;
                 font-style: normal;
-                font-weight: 400px;
+                font-weight: 400;
                 letter-spacing: 0.03em;
             font-size: 16px;
             line-height: 1.9;            

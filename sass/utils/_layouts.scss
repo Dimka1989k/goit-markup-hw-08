@@ -3,7 +3,11 @@
     
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
 
 
    
@@ -11,6 +15,12 @@
 } 
 
 
+
+@media screen and (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+}
 
 @media screen and (min-width: 480px) {
      .container {

@@ -15,31 +15,31 @@ $bleuColor: #2196F3;
 
     &-list {
             
-        @media screen and (min-width:480px) {
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: 30px;
+        
+                
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;        
+        margin-bottom: 0;       
+        flex-wrap: wrap;        
+        margin-top: 30px;
                 
         
-            }
+            
         
         
         
             @media screen and (min-width:768px) {
                 display: flex;
                 flex-wrap: wrap;
-                margin-top: 30px;
+                
 
                 
         
             }
         
         
-        display: flex;
-            justify-content: space-between;
-            padding-left: 0;
-            margin-top: 50px;
-            margin-bottom: 0;
+        
 
 
     
@@ -47,9 +47,9 @@ $bleuColor: #2196F3;
     
         &-title {
             
-            @media screen and (min-width:480px) {
+            
                     font-family: 'Roboto', sans-serif;
-                    font-weight: 700px;
+                    font-weight: 700;
                     font-size: 28px;
                     line-height: 1.2;
                     text-align: center;
@@ -57,14 +57,14 @@ $bleuColor: #2196F3;
                     color: $blackColor;
                     margin: 0 auto;
             
-                }
+                
             
             
             
             
             @media screen and (min-width:768px) {
                 font-family: 'Roboto', sans-serif;
-                font-weight: 700px;
+                font-weight: 700;
                 font-size: 28px;
                 line-height: 1.2;
                 text-align: center;
@@ -78,7 +78,7 @@ $bleuColor: #2196F3;
             
             @media screen and (min-width:1200px) {
             font-family: 'Roboto', sans-serif;
-            font-weight: 700px;
+            font-weight: 700;
             font-size: 36px;
             line-height: 1.2;
             text-align: center;
@@ -98,7 +98,7 @@ $bleuColor: #2196F3;
     &__card { 
 
 
-        @media screen and (min-width:480px) {
+        
                 width: 450px;
                 height: 622px;
                 left: 215px;
@@ -109,7 +109,7 @@ $bleuColor: #2196F3;
                 text-align: center;
                 margin-bottom: 30px;
         
-            }
+            
 
         @media screen and (min-width:768px) {
                 width: 354px;
@@ -131,7 +131,7 @@ $bleuColor: #2196F3;
         
         
         @media screen and (min-width:1200px) {
-        width: 270;
+        width: 270px;
         height: 428px;
         left: 215px;
         top: 1635px;
@@ -159,7 +159,7 @@ $bleuColor: #2196F3;
     &__name {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: 500px;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -172,7 +172,7 @@ $bleuColor: #2196F3;
     &__job {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
-        font-weight: 400px;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -186,7 +186,7 @@ $bleuColor: #2196F3;
 
 
 .job-contact {
-    @media screen and (min-width:480px) {
+    
             display: flex;
             list-style: none;
             padding-left: 32px;
@@ -194,7 +194,7 @@ $bleuColor: #2196F3;
             margin-top: 16px;
             justify-content: center;
     
-        }
+        
 
 
 
@@ -207,6 +207,7 @@ $bleuColor: #2196F3;
             justify-content: center;
     
         }
+    
 
 
 
@@ -222,6 +223,8 @@ $bleuColor: #2196F3;
         justify-content: center;
         
     }
+
+
     
 
 
