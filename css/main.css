@@ -1497,7 +1497,6 @@ textarea {
 
 .team-list__card {
   max-width: 450px;
-  height: 622px;
   left: 215px;
   top: 1635px;
   background: #FFFFFF;
@@ -1510,7 +1509,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-list__card {
     max-width: 354px;
-    height: 536px;
     left: 215px;
     top: 1635px;
     background: #FFFFFF;
@@ -1524,7 +1522,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team-list__card {
     max-width: 270px;
-    height: 428px;
     left: 215px;
     top: 1635px;
     background: #FFFFFF;
@@ -1533,6 +1530,24 @@ textarea {
     border-radius: 0px 0px 4px 4px;
     text-align: center;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .team-list__content {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list__content {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .team-list__name {
@@ -1544,7 +1559,7 @@ textarea {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .team-list__job {
   font-family: "Roboto", sans-serif;
@@ -1596,6 +1611,12 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.job-contact__item {
+  margin-right: 10px;
+}
+.job-contact__item:last-child {
+  margin-right: 0px;
 }
 .job-contact__network-image {
   width: 20px;
