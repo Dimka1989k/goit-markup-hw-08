@@ -126,12 +126,12 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   margin-left: auto;
-  max-width: 450px;
+  width: 450px;
   height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -548,6 +548,7 @@ textarea {
     border-radius: 2px;
     margin-top: 44px;
     background-image: url(../images/hover.png);
+    opacity: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -986,6 +987,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 354px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -1003,6 +1005,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -1492,7 +1495,7 @@ textarea {
 }
 
 .team-list__card {
-  width: 450px;
+  max-width: 450px;
   height: 622px;
   left: 215px;
   top: 1635px;
@@ -1505,7 +1508,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .team-list__card {
-    width: 354px;
+    max-width: 354px;
     height: 536px;
     left: 215px;
     top: 1635px;
@@ -1519,7 +1522,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .team-list__card {
-    width: 270px;
+    max-width: 270px;
     height: 428px;
     left: 215px;
     top: 1635px;
@@ -1663,7 +1666,6 @@ textarea {
 
 .portfolio-cards {
   width: 450px;
-  height: 404px;
   left: 215px;
   top: 1130px;
   border: 1px solid #EEEEEE;
@@ -1672,7 +1674,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .portfolio-cards {
     width: 354px;
-    height: 440px;
     left: 159px;
     top: 1130px;
     border: 1px solid #EEEEEE;
@@ -1682,7 +1683,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .portfolio-cards {
     width: 370px;
-    height: 404px;
     left: 215px;
     top: 1130px;
     border: 1px solid #EEEEEE;
@@ -1809,6 +1809,9 @@ textarea {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #FFFFFF;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1821,6 +1824,9 @@ textarea {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #FFFFFF;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 .footer-logo__lable {
