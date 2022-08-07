@@ -9,21 +9,26 @@ $colorBlue: #2196F3;
 
     & {
 
-        
+        @media screen  and (max-width:767px) {
                 display: flex;
                 position: absolute;
                 top: 10%;
                 left: 50%;
                 transform: translate(-50%, 0);
                 margin-left: auto;
-                min-width: 100%;
+                width: 450px;
                 height: 609px;
                 background-color: $primaryColor;
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
                 border-radius: 4px;
                 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
+            }
+
+      
+               
         
+      
 
         @media screen and (min-width:768px) {
                 display: flex;
@@ -106,7 +111,7 @@ $colorBlue: #2196F3;
     
         }
 
-}
+
 
 
 
@@ -159,3 +164,4 @@ $colorBlue: #2196F3;
 
 
 
+}
