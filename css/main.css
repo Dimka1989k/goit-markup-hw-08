@@ -572,7 +572,7 @@ textarea {
     border-radius: 2px;
     margin-top: 44px;
     background-image: url(../images/hover.png);
-    opacity: 0;
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1555,11 +1555,9 @@ textarea {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 480px) {
-  .team-list__content {
-    padding-top: 30px;
-    padding-bottom: 24px;
-  }
+.team-list__content {
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .team-list__content {
