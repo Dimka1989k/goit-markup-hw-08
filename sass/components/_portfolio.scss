@@ -6,6 +6,9 @@
     padding-left: 0%;
     gap: 30px;
     margin: 0;
+    
+    
+    
 
 
 }
@@ -46,8 +49,7 @@ $secondaryColor: #757575;
 
 
     @media screen and (min-width:1200px) {
-        width: 370px;
-        
+        width: 370px;        
         left: 215px;
         top: 1130px;
         border: 1px solid $borderColor;

@@ -20,26 +20,26 @@
 
 @media screen and (min-width: 320px) {
     .container {
-        width: 320px;
+       min-width: 320px;
         
     }
 }
 
 @media screen and (min-width: 480px) {
      .container {
-         width: 480px;
+        min-width: 480px;
      }
  }
 
  @media screen and (min-width: 768px) {
      .container {
-         width: 768px;
+        min-width: 768px;
      }
  }
 
  @media screen and (min-width: 1200px) {
      .container {
-         width: 1200px;
+        min-width: 1200px;
      }
 
  }
